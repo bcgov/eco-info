@@ -2,6 +2,9 @@ import arcpy
 
 infc = 'BC_Grids_All_20k_to_BC'
 
+# Example of input, index starts at 0
+inputfc= arcpy.GetParameterAsText(0)
+
 # If map sheet count >1 use dissolve sso its pretty for Deepa, if 1 sheet copy geometry
 
 
