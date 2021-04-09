@@ -27,7 +27,7 @@ fileinfo2csv <- function(wd, fn) {
     print (paste0("Searching the directory ", wd, " to create a list of files and their properties."))
     
     #create the fileinfo dataframe and add/format some additional fields
-    fileinfo <-dir_info(wd, fail = T, all = T, recursive = T) 
+    fileinfo <-dir_info(wd, fail = T, all = T, recurse = T) 
     fileinfo$size_num <- as.integer(fileinfo$size)
     fileinfo$file <- path_file(fileinfo$path)
     fileinfo$dir <- path_dir(fileinfo$path)
