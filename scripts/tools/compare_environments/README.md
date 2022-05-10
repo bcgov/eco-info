@@ -27,3 +27,4 @@ CONSIDERATIONS
 3. Fields where all values are mismatched are dropped to simplify further comparison. It is important to have a look at the Excel sheet showing which fields were dropped, and not just the sheet showing particular attribute mismatches. The log will indicate when fields are dropped.
 4. When multiple identically named geodatabases are found on one side of the comparison a list of their paths is output to Excel and the user will have to manually choose which to run through compare_gdb.py and do these comparisons separately.
 5. At present, certain qualities (such as duplicates) are only assessed for the test environment. It is important to make sure you input the environment paths in the correct order.
+6. Memory allocation issues have been encountered reading in a large dataset (from the STE_TEI_BCGW_PEM.gdb).
