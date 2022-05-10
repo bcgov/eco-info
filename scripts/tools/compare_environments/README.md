@@ -3,7 +3,7 @@
 
 OVERVIEW
 
-These tools are meant to provide the option of a "hollistic" comparison of two versions of TEI environments (directories) - providing a shallow comparison of files and folders within two directories and a more in-depth comparison of geodatabases and their constituents. An example use-case is the delivery of a new TEIS environment. It can be compared to a previous version of the TEIS environment to catch any unexpected omissions or differences in spatial reference, schema, and attribute values and check if the expected new BAPIDs were loaded.
+These tools are meant to provide the option of a "holistic" comparison of two versions of TEI environments (directories) - providing a shallow comparison of files and folders within two directories and a more in-depth comparison of geodatabases and their constituents. An example use-case is the delivery of a new TEIS environment. It can be compared to a previous version of the TEIS environment to catch any unexpected omissions or differences in spatial reference, schema, and attribute values and check if the expected new BAPIDs were loaded.
 
 Using compare_environments.py, the user can launch the comparison and choose which same-name geodatabases they'd like to further assess. This script calls compare_gdb.py, which in turn calls functions from the compare_feature.py module.
 
